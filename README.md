@@ -1,9 +1,6 @@
 # Auto Sync Google Form Dropdown
 
-> An An automation that help user add or update dropdown optiions from google sheet into google form.
-
-[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+> An automation script that syncs dropdown options from Google Sheets directly into Google Forms, enabling bulk imports and seamless updates.
 
 ---
 
@@ -11,54 +8,51 @@
 
 **Project Type:** Automation
 
-**Problem:** [What problem does this solve?]
+**Problem:** When users create forms in Google Forms with dropdown questions, they typically add options manually, one by one. This becomes a significant pain point when dealing with high-volume option lists that require frequent updates.
 
-**Solution:** An An automation that help user add or update dropdown optiions from google sheet into google form.
+**Solution:** An automation script that syncs dropdown options from Google Sheets directly into Google Forms, enabling bulk imports and real-time updates.
 
-**Impact:** [Key result or benefit]
+**Impact:** This script allows users to organize their dropdown options in a structured spreadsheet and eliminates manual effort when updating options across multiple forms.
 
 ---
 
 ## ✨ Key Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Form Sync Button
+- From Sync Status
 
 ---
 
 ## 🔧 Tech Stack
 
 **Core:**
-- Python 3.8+
-- pandas, numpy
-- [Add your main libraries]
+- App Script
+- Google Sheet
 
 ---
 
 ## 🚀 Quick Start
-
-### Installation
-
-```bash
-# Clone repository
-git clone https://github.com/igarahmawati/Auto Sync Google Form Dropdown.git
-cd Auto Sync Google Form Dropdown
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Usage
-
-```bash
-# Add usage instructions here
-python src/main.py
-```
+1. Prepare your Google Sheet
+    - Create a dedicated worksheet to organize your form option lists
+    - Structure your data with clear column headers
+2. Configure your Google Form
+    - Ensure your target dropdown questions are named correctly (these names will be used for mapping)
+    - Set question type to "Dropdown"
+    - Leave the options blank (they will be populated automatically)
+3. Access Google Apps Script
+    - Open your Google Sheet
+    - Navigate to Extensions > Apps Script
+4. Deploy the automation script
+    - Copy the provided code into the Apps Script editor
+    - Customize the following variables:
+        - FORM_ID: Your Google Form ID (found in the form URL)
+        - SHEET_ID: Your Google Sheet ID (found in the sheet URL)
+        - DROPDOWN: Match your worksheet name and column name to the corresponding form questions
+    - Save the script (Ctrl+S or Cmd+S)
+5. Activate the sync menu
+    - Refresh your Google Sheet
+    - You'll see a new menu "🔄 Form Sync" in the menu bar
+    - Click 🔄 Form Sync > Sync Dropdowns Now to run the sync anytime
 
 ---
 
@@ -72,31 +66,6 @@ Auto Sync Google Form Dropdown/
 ├── requirements.txt   # Dependencies
 └── README.md         # This file
 ```
-
----
-
-## 📈 Results
-
-**Performance Metrics:**
-| Metric | Value |
-|--------|-------|
-| [Metric] | [Value] |
-
----
-
-## 🔬 Methodology
-
-1. **Step 1** - [Description]
-2. **Step 2** - [Description]
-3. **Step 3** - [Description]
-
----
-
-## 🔮 Future Improvements
-
-- [ ] Improvement 1
-- [ ] Improvement 2
-- [ ] Improvement 3
 
 ---
 
@@ -117,5 +86,4 @@ MIT License - see [LICENSE](LICENSE)
 
 ## 🙏 Acknowledgments
 
-- Data source: [Source name]
-- Inspired by: [Reference if applicable]
+- Data source: [G.Sheet](https://docs.google.com/spreadsheets/d/1s31PTo43iLpoo6dTgmDkvEqjCFWjd8cF2sIAq4sOrLs)
