@@ -1,6 +1,6 @@
 const CONFIG = {
-  FORM_ID: '1FAIpQLSc_cL70iApsO0LhtwKZW6EmRpjHPLTlcqG02nLYKa86fbYZcw', //Change with your ID of G.Form
-  SHEET_ID: '1s31PTo43iLpoo6dTgmDkvEqjCFWjd8cF2sIAq4sOrLs', //Change with your ID of G.Sheet
+  FORM_ID: 'Change with your ID of G.Form',
+  SHEET_ID: 'Change with your ID of G.Sheet',
 };
 
   const DROPDOWNS = [
