@@ -19,7 +19,7 @@
 ## ✨ Key Features
 
 - Form Sync Button
-- From Sync Status
+- Form Sync Status Sheet
 
 ---
 
@@ -43,7 +43,7 @@
     - Open your Google Sheet
     - Navigate to Extensions > Apps Script
 4. Deploy the automation script
-    - Copy the provided code into the Apps Script editor
+    - Copy the provided code into the Apps Script editor ➡️ auto_sync_script.gs
     - Customize the following variables:
         - FORM_ID: Your Google Form ID (found in the form URL)
         - SHEET_ID: Your Google Sheet ID (found in the sheet URL)
