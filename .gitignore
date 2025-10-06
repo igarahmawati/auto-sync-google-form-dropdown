@@ -1,0 +1,60 @@
+# Data files
+data/raw/*
+data/processed/*
+data/external/*
+data/staging/*
+*.csv
+*.xlsx
+*.json
+*.parquet
+*.db
+*.sqlite
+
+# Allow .gitkeep files
+!**/.gitkeep
+!data/raw/sample_*
+
+# Models
+models/*.pkl
+models/*.h5
+models/*.pt
+models/*.joblib
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/*
+!logs/.gitkeep
+
+# Environment variables
+.env
+.env.local
+
+# Reports (optional)
+# reports/outputs/*
